@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div id="tekst">
+            WITAJ W GRZE STATKI. WYBIERZ PRZYNAJMNIEJ 5 STATKÓW NA SWOJEJ PLANSZY I KLIKNIJ ZACZNIJ GRE
+        </div>
+        <mapa_statkow>
+            <table id="mojaPlansza">
+                <!-- tutaj generujemy content -->
+            </table>
+
+            <table id="planszaPrzeciwnika" inert="true">
+                <!-- tutaj generujemy ten sam content jeśli chodzi o strukturę-->
+            </table>        
+        </mapa_statkow>
+        <panel_kontrolny>
+            <button id="zacznijGre" onclick="KliknieciePrzyciskuZacznij()">Zacznij grę</button>
+        </panel_kontrolny>
+        <div class="container">
+        <div class="popup" id="popup">
+            <h2 id="message">KOMUNIKAT</h2>
+            <button type="button" onclick="close1()">Ja chce jeszcze raz!</button>
+            </div>
+        </div>
+    
+        <script src="scripts/main.js" async defer></script>
+        <!-- <script src="test.js"></script>-->
+    </body>
+</html>

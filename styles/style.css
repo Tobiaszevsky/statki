@@ -1,0 +1,75 @@
+mapa_statkow, panel_kontrolny {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100%;
+}
+panel_kontrolny {
+    margin-top: 30rem;   
+}
+panel_kontrolny > button {
+    padding: 1rem;
+}
+mapa_statkow > table {
+    border: 1px solid black;
+}
+.pole.zaznaczony {
+    background-color: rgb(74, 197, 25);
+}
+mapa_statkow > table .pole {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(173, 185, 196, 0.507);
+    border: 1px solid #3f404bff;
+}
+#planszaPrzeciwnika{
+    visibility:hidden;
+}
+#tekst{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup h2{
+    font-size:38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 40%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0, 5px 5px rgba(0,0,0,0.2);
+}
